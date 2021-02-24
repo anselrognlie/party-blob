@@ -1,8 +1,12 @@
-remote uses fluxbox as window manager
+remote uses fluxbox as window manager- neat
 
 intro.md
 ========
 - is there a way to force external links to open in a new tab/window?
+- how will students be evaluated? is this a manual check or can any test be supplied?
+  - can we abstract the pygame stuff enough for there to be meaningful tests?
+  - can we make use of the blob object directly?
+  - in some ways this feels like it would be ideally presented as a lab activity where teams could just be checked off as done. Do we have a model for that with remote learning?
 
 part 1 (intro)
 ======
@@ -17,6 +21,8 @@ part 2 (OOP w/pygame)
 - RGB tuples
 - suggest a smaller width/height to display better in repl
 - the update comes after the draw???
+- why does the main own the logic for updating blobs?
+- why does the main own the logic for drawing blobs?
 - are students familiar with the __name__ check?
 
 part 3 (many blobs)
@@ -39,6 +45,8 @@ part 5 (inheritance)
 - the BlueBlob as the derived class is a little silly
   - Suggest some other name that doesn't involve color
   - Implementation doesn't leverage overriding methods so the update method keeps needing to be revised
+  - should just remove color from __init__ for derived type
+  - minor changes required at instantiation
 - derived __init__ need to use super (not covered in curriculum)
 - color definitions are in main (move to colors.py)
   - some variable renaming required
@@ -57,3 +65,16 @@ part 6 (decorators)
 - to be fair, the lesson is no longer labeled OOP
   - the curriculum /does/ cover decorators already, and while this might help students remember that, it's so disconnected from everything else I question the value
 
+part 7 (operator overloading)
+=======
+- jettisons use of color constants and doesn't add green
+- using __add__ in this way is awful, especially since it breaks common assumptions about + that it doesn't modify the arguments
+- when consuming a green blob, that other blob should really be destroyed, not just reduced to 0
+- when reduced by a red blob, the blue shouldn't go negative, and should be destroyed at 0
+- the end of this tutorial has some weirdly formatted prints (including a missig closing paren)
+- the idea of blob interaction is good, but presenting it with operator overloading is awful
+
+part 8 (special methods, OOP, iteration)
+========
+- starts with very strange detour in iterators and generators
+  - uses some list comprehension examples

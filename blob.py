@@ -24,3 +24,10 @@ class Blob:
         
         if self.y < 0: self.y = 0
         elif self.y > self.y_boundary: self.y = self.y_boundary
+
+    def update(self):
+      self.move()
+      self.check_bounds()
+
+    def draw(self, display, context):
+      context.circle(display, self.color, [self.x, self.y], self.size)
