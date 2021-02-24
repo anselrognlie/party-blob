@@ -9,12 +9,14 @@ intro.md
   - in some ways this feels like it would be ideally presented as a lab activity where teams could just be checked off as done. Do we have a model for that with remote learning?
 
 part 1 (intro)
+https://pythonprogramming.net/object-oriented-programming-introduction-intermediate-python-tutorial/
 ======
 - I'm annoyed the tutorial doesn't say in which file to create the Blob class
 - I'm annoyed that the file doesn't have the proper imports to be runnable (briefly mentioned at 5:24, not at all in text)
 - doesn't define WIDTH/HEIGHT, says he'll bring them in and explains what they are, but really??? (and not mentioned in text)
 
 part 2 (OOP w/pygame)
+https://pythonprogramming.net/creating-pygame-environment-intermediate-python-tutorial/
 ======
 - arg! it's all in main???
 - at least the imports are set
@@ -26,6 +28,7 @@ part 2 (OOP w/pygame)
 - are students familiar with the __name__ check?
 
 part 3 (many blobs)
+https://pythonprogramming.net/many-blob-objects-intermediate-python-tutorial/
 ======
 - uses list comprehensions, which aren't covered in the curriculum
 - intermediate state of blue blob stuff is missing the updated call to draw_environment
@@ -33,12 +36,14 @@ part 3 (many blobs)
 - why get the keys instead of the pairs during enumeration
 
 part 4 (classes and OOP modularity)
+https://pythonprogramming.net/class-object-modularity-intermediate-python-tutorial/
 ======
 - perhaps confusing that the default tuple is in the argument list.  Students might think this is ok to do for lists/dicts (mutables) as well.
 - leaves import random after moving Blob to separate file
 - encourage students to experiment with calling/not calling check_bounds, having it be configurable (or not)
 
 part 5 (inheritance)
+https://pythonprogramming.net/inheritance-object-oriented-programming-intermediate-python-tutorial/
 ======
 - puts BlueBlob in the main (not mentioned in text)
 - imports aren't module style
@@ -59,6 +64,7 @@ part 5 (inheritance)
   - should use -5, 6 for the range
 
 part 6 (decorators)
+https://pythonprogramming.net/decorators-intermediate-python-tutorial/
 =======
 - this has literally nothing to do with OOP
 - and where did the blobs go
@@ -66,6 +72,7 @@ part 6 (decorators)
   - the curriculum /does/ cover decorators already, and while this might help students remember that, it's so disconnected from everything else I question the value
 
 part 7 (operator overloading)
+https://pythonprogramming.net/operator-overloading-intermediate-python-tutorial/
 =======
 - jettisons use of color constants and doesn't add green
 - using __add__ in this way is awful, especially since it breaks common assumptions about + that it doesn't modify the arguments
@@ -73,8 +80,13 @@ part 7 (operator overloading)
 - when reduced by a red blob, the blue shouldn't go negative, and should be destroyed at 0
 - the end of this tutorial has some weirdly formatted prints (including a missig closing paren)
 - the idea of blob interaction is good, but presenting it with operator overloading is awful
+- collision detection is deferred to the following tutorial (not linked in the lesson)
+  - https://pythonprogramming.net/detecting-collisions-intermediate-python-tutorial/?completed=/operator-overloading-intermediate-python-tutorial/
 
 part 8 (special methods, OOP, iteration)
+https://pythonprogramming.net/special-methods-iteration-intermediate-python-tutorial/
 ========
 - starts with very strange detour in iterators and generators
   - uses some list comprehension examples
+- this whole section, like the decorators, is completely divorced from the party blobs example
+- recommend dropping
