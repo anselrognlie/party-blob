@@ -1,0 +1,59 @@
+remote uses fluxbox as window manager
+
+intro.md
+========
+- is there a way to force external links to open in a new tab/window?
+
+part 1 (intro)
+======
+- I'm annoyed the tutorial doesn't say in which file to create the Blob class
+- I'm annoyed that the file doesn't have the proper imports to be runnable (briefly mentioned at 5:24, not at all in text)
+- doesn't define WIDTH/HEIGHT, says he'll bring them in and explains what they are, but really??? (and not mentioned in text)
+
+part 2 (OOP w/pygame)
+======
+- arg! it's all in main???
+- at least the imports are set
+- RGB tuples
+- suggest a smaller width/height to display better in repl
+- the update comes after the draw???
+- are students familiar with the __name__ check?
+
+part 3 (many blobs)
+======
+- uses list comprehensions, which aren't covered in the curriculum
+- intermediate state of blue blob stuff is missing the updated call to draw_environment
+- will students have already seen the `enumerate` function?
+- why get the keys instead of the pairs during enumeration
+
+part 4 (classes and OOP modularity)
+======
+- perhaps confusing that the default tuple is in the argument list.  Students might think this is ok to do for lists/dicts (mutables) as well.
+- leaves import random after moving Blob to separate file
+- encourage students to experiment with calling/not calling check_bounds, having it be configurable (or not)
+
+part 5 (inheritance)
+======
+- puts BlueBlob in the main (not mentioned in text)
+- imports aren't module style
+- the BlueBlob as the derived class is a little silly
+  - Suggest some other name that doesn't involve color
+  - Implementation doesn't leverage overriding methods so the update method keeps needing to be revised
+- derived __init__ need to use super (not covered in curriculum)
+- color definitions are in main (move to colors.py)
+  - some variable renaming required
+- mentions multiple inheritance
+- super considered super
+  - https://rhettinger.wordpress.com/2011/05/26/super-considered-super/
+  - https://www.youtube.com/watch?v=EiOglTERPEo
+- needs import random if in separate file
+- move_fast is asymetric and causes blob to cluster
+  - should use -5, 6 for the range
+
+part 6 (decorators)
+=======
+- this has literally nothing to do with OOP
+- and where did the blobs go
+- to be fair, the lesson is no longer labeled OOP
+  - the curriculum /does/ cover decorators already, and while this might help students remember that, it's so disconnected from everything else I question the value
+
